@@ -2,3 +2,4 @@
 lib*
 # ignore object files
 *.o
+/build/
