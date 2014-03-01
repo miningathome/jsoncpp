@@ -15,9 +15,6 @@ set(public_hdr
 	"dist/json/json.h"
 	"dist/json/json-forwards.h")
 
-# if (MHLIB_SHARED_LIB AND WIN32)
-# 	list(APPEND platformlibs "shlwapi")
-# endif()
 include_directories(dist)
 
 add_library(${libname} ${libtype} ${src} ${public_hdr})
