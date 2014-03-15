@@ -3726,7 +3726,7 @@ FastWriter::write( const Value &root )
 {
    document_ = "";
    writeValue( root );
-   document_ += "\n";
+   //document_ += "\n"; // no library should ever be doing this really
    return document_;
 }
 
@@ -3810,7 +3810,7 @@ StyledWriter::write( const Value &root )
    writeCommentBeforeValue( root );
    writeValue( root );
    writeCommentAfterValueOnSameLine( root );
-   document_ += "\n";
+   //document_ += "\n"; // no thanks
    return document_;
 }
 
@@ -4087,7 +4087,7 @@ StyledStreamWriter::write( std::ostream &out, const Value &root )
    writeCommentBeforeValue( root );
    writeValue( root );
    writeCommentAfterValueOnSameLine( root );
-   *document_ << "\n";
+   //*document_ << "\n"; // mh: we don't want this behaviour
    document_ = NULL; // Forget the stream, for safety.
 }
 
