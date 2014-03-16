@@ -8,9 +8,9 @@ set(libname "jsoncpp")
 
 set(libtype SHARED)
 
-add_definitions(-DJSON_DLL_BUILD)
 if (MSVC)
 	add_definitions("/wd4251")
+	add_definitions(-DJSON_DLL_BUILD)
 endif()
 
 set(src
