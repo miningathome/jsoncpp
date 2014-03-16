@@ -2,7 +2,7 @@ cmake_minimum_required (VERSION 2.8)
 
 project(jsoncpp CXX)
 
-include(cmake/clean_slate.cmake)
+include(unifier/unifier.cmake)
 
 set(libname "jsoncpp")
 
