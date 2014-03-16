@@ -6,7 +6,7 @@ include(unifier/unifier.cmake)
 
 set(libname "jsoncpp")
 
-set(libtype SHARED)
+set(libtype STATIC)
 
 if (MSVC)
 	add_definitions("/wd4251")
