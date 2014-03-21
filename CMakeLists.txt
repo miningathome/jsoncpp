@@ -13,10 +13,6 @@ if (MSVC)
 	add_definitions(-DJSON_DLL_BUILD)
 endif()
 
-if(CMAKE_COMPILER_IS_GNUCXX)
-        set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -fPIC -std=c++11")
-endif()
-
 set(src
 	"src/lib_json/json_reader.cpp"
 	"src/lib_json/json_value.cpp"
