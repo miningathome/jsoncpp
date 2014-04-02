@@ -217,7 +217,8 @@ FastWriter::write( const Value &root )
 {
    document_ = "";
    writeValue( root );
-   document_ += "\n";
+   // do not add new line
+   //document_ += "\n";
    return document_;
 }
 
